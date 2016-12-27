@@ -199,3 +199,30 @@ Started GET "/assets/application.js?body=1" for 104.131.159.76 at 2016-12-24 08:
 
 
 Started GET "/assets/jquery.js?body=1" for 104.131.159.76 at 2016-12-24 08:34:36 -0500
+
+
+Started GET "/" for 104.131.159.76 at 2016-12-27 09:39:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 235ms (Views: 221.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 104.131.159.76 at 2016-12-27 09:39:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
+
+
+Started GET "/assets/home.js?body=1" for 104.131.159.76 at 2016-12-27 09:39:28 -0500
