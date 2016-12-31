@@ -45,10 +45,10 @@ gem 'devise', '~> 4.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development, :test do
-	gem 'sqlite3'
+gem 'sqlite3'
 end
 
 group :production do
-	gem 'pg', '0.17.1'
-	gem 'rails_12factor', '0.0.2'
+gem 'pg', '0.17.1'
+gem 'rails_12factor', '0.0.2'
 end
