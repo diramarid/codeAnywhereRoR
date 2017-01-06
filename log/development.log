@@ -10325,3 +10325,221 @@ Started GET "/assets/pins.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:17
 
 
 Started GET "/assets/application.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:17:00 -0500
+
+
+Started GET "/pins/new" for 104.131.159.76 at 2017-01-06 07:24:32 -0500
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (24.7ms)
+  Rendered pins/new.html.erb within layouts/application (26.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/_header.html.erb (2.2ms)
+Completed 200 OK in 187ms (Views: 182.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/application.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/pins.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/remove_scaffolds.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/jquery.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/bootstrap.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/home.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/pins.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:33 -0500
+
+
+Started GET "/assets/application.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:24:34 -0500
+
+
+Started GET "/assets/bootstraply.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:24:34 -0500
+
+
+Started GET "/users/edit" for 104.131.159.76 at 2017-01-06 07:27:31 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (13.6ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 202ms (Views: 199.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users" for 104.131.159.76 at 2017-01-06 07:27:36 -0500
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CE0+EOs9ZZemEayNTDb8bFId/lgQkqi/dVUoavPskV4="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (25.9ms)[0m  commit transaction
+Redirected to https://rortake1-ganorf4232413.codeanyapp.com/
+Completed 302 Found in 37ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/" for 104.131.159.76 at 2017-01-06 07:27:36 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (5.4ms)
+Completed 200 OK in 182ms (Views: 181.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstraply.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:27:36 -0500
+
+
+Started GET "/assets/jquery.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:36 -0500
+
+
+Started GET "/assets/remove_scaffolds.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/home.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/pins.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/application.self.css?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/home.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/pins.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+
+
+Started GET "/assets/application.self.js?body=1" for 104.131.159.76 at 2017-01-06 07:27:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToPins (20170106123236)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "pins" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_pins_on_user_id" ON "pins" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170106123236"]]
+  [1m[36m (32.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
