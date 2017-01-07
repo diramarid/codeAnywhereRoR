@@ -16270,3 +16270,242 @@ Processing by PinsController#index as HTML
   [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
   Rendered home/_header.html.erb (3.7ms)
 Completed 200 OK in 254ms (Views: 239.3ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/pins" for 104.131.159.76 at 2017-01-07 07:10:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered pins/index.html.erb within layouts/application (83.1ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 1874ms (Views: 1840.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstraply.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/pins.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/home.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/application.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/remove_scaffolds.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/jquery.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:18 -0500
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/home.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/bootstrap.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/application.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:19 -0500
+
+
+Started GET "/assets/pins.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:10:20 -0500
+
+
+Started GET "/pins/1" for 104.131.159.76 at 2017-01-07 07:28:19 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/_header.html.erb (2.2ms)
+Completed 200 OK in 175ms (Views: 172.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/1" for 104.131.159.76 at 2017-01-07 07:28:29 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/_header.html.erb (12.3ms)
+Completed 200 OK in 236ms (Views: 232.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pins" for 104.131.159.76 at 2017-01-07 07:30:22 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered pins/index.html.erb within layouts/application (15.1ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 186ms (Views: 184.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/home.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/application.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/home.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/bootstraply.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:30:23 -0500
+
+
+Started GET "/assets/pins.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/remove_scaffolds.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/application.self.css?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/jquery.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/pins.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for 104.131.159.76 at 2017-01-07 07:30:24 -0500
+
+
+Started GET "/pins/1" for 104.131.159.76 at 2017-01-07 07:30:25 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pins/show.html.erb within layouts/application (2.2ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 168ms (Views: 165.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for 104.131.159.76 at 2017-01-07 07:30:27 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered pins/index.html.erb within layouts/application (11.1ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 225ms (Views: 222.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/1" for 104.131.159.76 at 2017-01-07 07:30:30 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pins/show.html.erb within layouts/application (1.9ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 169ms (Views: 166.4ms | ActiveRecord: 0.5ms)
